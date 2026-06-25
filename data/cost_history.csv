@@ -1,0 +1,6 @@
+Resource,Previous_Cost,Current_Cost
+VM-01,10000,15000
+VM-02,4000,4500
+AKS-Cluster,5000,25000
+Storage-01,10000,12000
+Database-01,15000,18000

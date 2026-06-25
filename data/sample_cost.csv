@@ -1,0 +1,6 @@
+Resource,Type,Cost
+VM-01,Virtual Machine,15000
+VM-02,Virtual Machine,4000
+AKS-Cluster,Kubernetes,25000
+Storage-01,Storage Account,12000
+Database-01,SQL Database,18000
