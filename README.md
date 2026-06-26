@@ -1,54 +1,89 @@
-# AI Cloud Cost Detective
+# ☁️ AI Cloud Cost Detective
 
 ## Overview
 
-AI Cloud Cost Detective is a FinOps-inspired cloud cost optimization platform that helps organizations monitor, analyze, and optimize cloud spending.
+AI Cloud Cost Detective is a FinOps-inspired cloud cost optimization platform built using Python, Streamlit, and Microsoft Azure. The application helps organizations monitor, analyze, and optimize cloud spending by integrating with the Azure Cost Management API.
 
-The application integrates with Azure Cost Management APIs to retrieve real cloud cost data, detect anomalies, identify expensive resources, estimate savings opportunities, and provide optimization recommendations through an interactive dashboard.
+It provides real-time cloud cost insights, identifies high-cost resources, detects spending anomalies, estimates potential savings, and offers optimization recommendations through an interactive dashboard.
+
+---
 
 ## Features
 
-* Real Azure Cost Management API Integration
-* Cloud Cost Analysis Dashboard
-* Resource-wise Cost Breakdown
-* Cost Distribution Visualizations
-* High Cost Resource Detection
-* Cost Anomaly Detection
-* Savings Estimation
-* Cost Optimization Recommendations
-* Dockerized Deployment
-* Streamlit-based User Interface
+* ✅ Azure Cost Management API Integration
+* ✅ Real-Time Cloud Cost Analysis
+* ✅ Interactive Streamlit Dashboard
+* ✅ Resource-wise Cost Breakdown
+* ✅ Cost Distribution Charts
+* ✅ High-Cost Resource Detection
+* ✅ Cost Anomaly Detection
+* ✅ Savings Calculator
+* ✅ AI-based Cost Optimization Recommendations
+* ✅ Docker Support
+
+---
 
 ## Tech Stack
 
-* Python
-* Streamlit
-* Azure Cost Management API
-* Azure Identity
-* Pandas
-* Plotly
-* Docker
+| Category         | Technologies              |
+| ---------------- | ------------------------- |
+| Language         | Python                    |
+| Frontend         | Streamlit                 |
+| Cloud            | Microsoft Azure           |
+| APIs             | Azure Cost Management API |
+| Authentication   | Azure Identity            |
+| Visualization    | Plotly                    |
+| Data Processing  | Pandas                    |
+| Containerization | Docker                    |
+
+---
 
 ## Project Architecture
 
+```text
 Azure Subscription
-↓
+        │
+        ▼
 Azure Cost Management API
-↓
+        │
+        ▼
 Python Backend
-↓
-Cost Analysis Engine
-↓
-Anomaly Detection Engine
-↓
+        │
+ ┌───────────────┐
+ │ Cost Analysis │
+ └───────────────┘
+        │
+        ▼
+Anomaly Detection
+        │
+        ▼
 Savings Calculator
-↓
+        │
+        ▼
+AI Recommendations
+        │
+        ▼
 Streamlit Dashboard
+```
+
+---
+
+## Screenshots
+
+Add your screenshots here after uploading them.
+
+* Dashboard
+* Cost Analysis
+* Azure Cost Integration
+* Charts
+* Anomaly Detection
+
+---
 
 ## Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/AI-Cloud-Cost-Detective.git
 
 cd AI-Cloud-Cost-Detective
 
@@ -57,24 +92,34 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+---
+
 ## Docker
 
 ```bash
 docker build -t ai-cloud-cost-detective .
 
-docker run -p 8501:8501 ai-cloud-cost-detective
+docker run --env-file .env -p 8501:8501 ai-cloud-cost-detective
 ```
+
+---
 
 ## Future Enhancements
 
-* Multi-cloud support (AWS, Azure, GCP)
-* AI-powered cost forecasting
-* Slack/Teams alerts
-* Automated optimization recommendations
-* FinOps reporting
+* AWS Cost Explorer Integration
+* Google Cloud Billing Integration
+* AI Cost Forecasting
+* Email Alerts
+* Slack & Microsoft Teams Notifications
+* Monthly FinOps Reports
+* Cost Optimization Automation
+
+---
 
 ## Author
 
-A. Kishore Kumar
-Final Year Information Technology Student
-Cloud | DevOps | Azure | Kubernetes
+**A. Kishore Kumar**
+
+Final Year B.Tech Information Technology Student
+
+Cloud Computing | DevOps | Azure | Docker | Kubernetes | Python
