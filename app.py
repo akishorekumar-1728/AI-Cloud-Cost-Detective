@@ -68,6 +68,8 @@ with col3:
 st.subheader("☁️ Real Azure Cost Data")
 
 azure_data = get_azure_cost_data()
+if isinstance(azure_data, dict) and "error" in azure_data:
+    st.error(f"Azure Error: {azure_data['error']}")
 
 if azure_data:
 
